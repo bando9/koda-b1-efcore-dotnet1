@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User01\\Documents\\_DATA D\\Batch 1\\Example\\WEEK 4\\WEEK 4\\DOTNET2\\src\\KodaStore.Api\\KodaStore.Api.csproj": {}
+    "E:\\code\\koda-projects\\day17-efcore-datainteg\\koda-b1-efcore\\KodaStore.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User01\\Documents\\_DATA D\\Batch 1\\Example\\WEEK 4\\WEEK 4\\DOTNET2\\src\\KodaStore.Api\\KodaStore.Api.csproj": {
+    "E:\\code\\koda-projects\\day17-efcore-datainteg\\koda-b1-efcore\\KodaStore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User01\\Documents\\_DATA D\\Batch 1\\Example\\WEEK 4\\WEEK 4\\DOTNET2\\src\\KodaStore.Api\\KodaStore.Api.csproj",
+        "projectUniqueName": "E:\\code\\koda-projects\\day17-efcore-datainteg\\koda-b1-efcore\\KodaStore.Api.csproj",
         "projectName": "KodaStore.Api",
-        "projectPath": "C:\\Users\\User01\\Documents\\_DATA D\\Batch 1\\Example\\WEEK 4\\WEEK 4\\DOTNET2\\src\\KodaStore.Api\\KodaStore.Api.csproj",
-        "packagesPath": "C:\\Users\\User01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User01\\Documents\\_DATA D\\Batch 1\\Example\\WEEK 4\\WEEK 4\\DOTNET2\\src\\KodaStore.Api\\obj\\",
+        "projectPath": "E:\\code\\koda-projects\\day17-efcore-datainteg\\koda-b1-efcore\\KodaStore.Api.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\code\\koda-projects\\day17-efcore-datainteg\\koda-b1-efcore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User01\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,6 +55,16 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[7.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.14, )"
             },
             "Scalar.AspNetCore": {
               "target": "Package",
