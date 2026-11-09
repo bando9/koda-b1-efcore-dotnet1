@@ -52,8 +52,16 @@ public sealed class AppDbContext : DbContext
 
             entity.HasData(
                 new Product("PR01", "Mie Ayam Yamin", 13000, 250,"Mie Ayam"),
+                new
+                {
+                    ProductCode="PR03", 
+                    Name = "Bakso Halus", 
+                    Price = 15000m, 
+                    Stock = 210,
+                    Category = "Bakso",
+                    Description = "Bakso dg tetelan daging"
+                },
                 new Product("PR02", "Bakso Campuran", 17000, 250,"Bakso","bakso urat besar, lainnya kecil")
-
             );      
         });
     }

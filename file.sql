@@ -36,4 +36,4 @@ SELECT TABLE_NAME FROM INFORMATION_SCHEMA.Tables
 Where TABLE_TYPE = 'BASE TABLE';
 GO
 
-select * FROM Product;
+select * FROM dbo.Product;

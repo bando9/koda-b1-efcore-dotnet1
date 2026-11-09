@@ -27,7 +27,7 @@ public sealed class ProductController : ControllerBase
     public async Task<ActionResult<IReadOnlyList<Product>>> GetAll(CancellationToken cancellationToken)
     {
         var products = await _service.GetAllAsync(cancellationToken);
-        return Ok(products);
+        return Ok(products); 
     }
 
     [HttpGet("{productCode}")]

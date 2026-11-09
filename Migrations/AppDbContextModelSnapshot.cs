@@ -68,6 +68,15 @@ namespace KodaStore.Api.Migrations
                         },
                         new
                         {
+                            ProductCode = "PR03",
+                            Category = "Bakso",
+                            Description = "Bakso dg tetelan daging",
+                            Name = "Bakso Halus",
+                            Price = 15000m,
+                            Stock = 210
+                        },
+                        new
+                        {
                             ProductCode = "PR02",
                             Category = "Bakso",
                             Description = "bakso urat besar, lainnya kecil",
