@@ -4,6 +4,7 @@ using KodaStore.Api.Files;
 using KodaStore.Api.Middlewares;
 using KodaStore.Api.Repositories;
 using KodaStore.Api.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,15 @@ builder.Services.AddScoped<IProductRepository, SqlProductRepository>();
 // Service
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductImageStorage, LocalProductImageStorage>();
+
+
+var connectionString = builder.Configuration.GetConnectionString("ecommercedb") 
+    ?? throw new InvalidOperationException("ga bisa koneksi, belum konfigurasi");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString)
+);
+
 
 var app = builder.Build();
 app.UseExceptionHandler();
