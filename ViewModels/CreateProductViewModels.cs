@@ -30,4 +30,5 @@ public sealed class CreateProductViewModel
     [StringLength(80, ErrorMessage = "Maksimal 80 karakter.")]
     [Display(Name = "Kategori")]
     public string Category { get; set; } = string.Empty;
+    public string? Description { get; set; } = string.Empty;
 }

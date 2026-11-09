@@ -19,5 +19,8 @@ public record ProductRequest(
     int Stock,
 
     [Required, StringLength(120)]
-    string Category
+    string Category,
+
+    [StringLength(100)]
+    string? Description
 );

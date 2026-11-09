@@ -17,27 +17,29 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "productCode": "P005",
-    "name": "",
-    "price": -3000,
-    "stock": 12,
-    "category": "Elektronik"
+    "productCode": "PR05",
+    "name": "Bakso Satelit",
+    "price": 22000,
+    "stock": 231,
+    "category": "Bakso",
+    "description": "Bakso isimewa dg tetelan daging"
 }
 
 ### UPDATE DATA
-PUT {{baseUrl}}/api/v1/products/P002
+PUT {{baseUrl}}/api/v1/products/PR04
 Accept: application/json
 Content-Type: application/json
 
 {
-    "name": "Remote",
-    "price": 35000,
-    "stock": 20,
-    "category": "TV"
+    "name": "Bakso Urat",
+    "price": 15000,
+    "stock": 221,
+    "category": "Bakso",
+    "description": "Bakso pake urat sapi, rasa rada alot menggoda"
 }
 
 ### Delete Product
-DELETE {{baseUrl}}/api/v1/products/PR001
+DELETE {{baseUrl}}/api/v1/products/PR05
 Accept: application/json
 
 ### Upload Gambar

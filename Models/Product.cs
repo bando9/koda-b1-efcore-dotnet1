@@ -42,7 +42,7 @@ public sealed class Product
         Description = description?.Trim();
     }
 
-    public void UpdateDetail(string name,decimal price, int stock, string category,string description)
+    public void UpdateDetail(string name,decimal price, int stock, string category,string? description)
     {
         var validated = new Product(ProductCode, name, price, stock, category, description);
 

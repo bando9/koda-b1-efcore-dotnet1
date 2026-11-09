@@ -69,7 +69,8 @@ public sealed class CatalogController : Controller
     model.Name,
     model.Price ?? 0, // Jika null, anggap saja 0 (meski tidak mungkin null karena ModelState)
     model.Stock ?? 0, // Jika null, anggap saja 0
-    model.Category
+    model.Category,
+    model?.Description
 );
 
             // Service -> Repository -> SQL Server
@@ -156,7 +157,8 @@ public sealed class CatalogController : Controller
                 model.Name,
                 model.Price ?? 0, // Jika null, anggap saja 0 (meski tidak mungkin null karena ModelState)
                 model.Stock ?? 0, // Jika null, anggap saja 0
-                model.Category
+                model.Category,
+                model?.Description
             );
 
             // Service -> Repository -> SQL UPDATE
