@@ -17,7 +17,7 @@
 -- );
 -- Select name From sys.databases;
 -- SELECT DB_NAME() AS CurrentDatabase;
-GO
+-- GO
 
 -- SELECT name FROM sys.tables;
 -- SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE';
@@ -28,4 +28,12 @@ GO
 -- UPDATE dbo.Product SET Price = 5000.00, Stock = 3 WHERE ProductCode = 'PR001';
 -- DELETE FROM dbo.Product WHERE ProductId = 2;
 -- SELECT * FROM dbo.Product;
+-- GO
+
+USE ecommercedb;
+-- DROP TABLE dbo.Customer;
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.Tables
+Where TABLE_TYPE = 'BASE TABLE';
 GO
+
+select * FROM Product;

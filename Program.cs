@@ -30,19 +30,20 @@ builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 // builder.Services.AddSingleton<IProductService, ProductService>();
 
 // Repository
-builder.Services.AddScoped<IProductRepository, SqlProductRepository>();
+// builder.Services.AddScoped<IProductRepository, SqlProductRepository>();
 
 // Service
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IProductImageStorage, LocalProductImageStorage>();
+// builder.Services.AddScoped<IProductService, ProductService>();
+// builder.Services.AddScoped<IProductImageStorage, LocalProductImageStorage>();
 
 
 var connectionString = builder.Configuration.GetConnectionString("ecommercedb") 
     ?? throw new InvalidOperationException("ga bisa koneksi, belum konfigurasi");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(connectionString)
-);
+{
+    options.UseSqlServer(connectionString);    
+}); 
 
 
 var app = builder.Build();
